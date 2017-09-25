@@ -1,0 +1,259 @@
+                                                *** START TESTBENCH ***
+
+                   0 ns  Environment: Start building environment for the DUT
+                   0 ns  Environment: Driver, Scoreboard and mailbox has been created
+                   0 ns  Environment: Driver starting
+
+                   0 ns       Driver: Start resetting the DUT
+                  50 ns       Driver: End of reset
+
+                  50 ns               >>> Start checking single write mode for both Masters
+
+                  50 ns       Driver: Try to generate transaction for Master 0
+                  50 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000d
+                  50 ns       Driver: Try to generate transaction for Master 1
+                  50 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000f
+                  50 ns   Scoreboard: Get transactions from Driver
+                  50 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000d
+                  50 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000f
+                 210 ns       Driver: Transactions successfully done
+                 210 ns
+                 210 ns       Driver: Try to generate transaction for Master 0
+                 210 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000c
+                 210 ns       Driver: Try to generate transaction for Master 1
+                 210 ns               Transaction is: Slave = 1, address = 000000bb, data = 0000000c
+                 210 ns   Scoreboard: Get transactions from Driver
+                 210 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000c
+                 210 ns               Transaction is: Slave = 1, address = 000000bb, data = 0000000c
+                 370 ns       Driver: Transactions successfully done
+                 370 ns
+                 370 ns       Driver: Try to generate transaction for Master 0
+                 370 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000d
+                 370 ns       Driver: Try to generate transaction for Master 1
+                 370 ns               Transaction is: Slave = 0, address = 000000ff, data = 0000000e
+                 370 ns   Scoreboard: Get transactions from Driver
+                 370 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000d
+                 370 ns               Transaction is: Slave = 0, address = 000000ff, data = 0000000e
+                 530 ns       Driver: Transactions successfully done
+                 530 ns
+                 530 ns       Driver: Try to generate transaction for Master 0
+                 530 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000d
+                 530 ns       Driver: Try to generate transaction for Master 1
+                 530 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000f
+                 530 ns   Scoreboard: Get transactions from Driver
+                 530 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000d
+                 530 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000f
+                 690 ns       Driver: Transactions successfully done
+                 690 ns
+
+                 690 ns               >>> Checking single write mode for both Masters has been finished
+
+
+                 850 ns       Driver: Start resetting the DUT
+                 910 ns       Driver: End of reset
+
+                 910 ns               >>> Start checking single read mode for both Masters
+
+                 910 ns       Driver: Try to generate transaction for Master 0
+                 910 ns               Transaction is: Slave = 0, address = 000000dd, data = 0000000e
+                 910 ns       Driver: Try to generate transaction for Master 1
+                 910 ns               Transaction is: Slave = 0, address = 000000aa, data = 0000000f
+                 910 ns   Scoreboard: Get transactions from Driver
+                 910 ns               Transaction is: Slave = 0, address = 000000dd, data = 0000000e
+                 910 ns               Transaction is: Slave = 0, address = 000000aa, data = 0000000f
+                1070 ns       Driver: Transactions successfully done
+                1070 ns       Driver: Try to generate transaction for Master 0
+                1070 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000a
+                1070 ns       Driver: Try to generate transaction for Master 1
+                1070 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                1070 ns   Scoreboard: Get transactions from Driver
+                1070 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000a
+                1070 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                1230 ns       Driver: Transactions successfully done
+                1230 ns       Driver: Try to generate transaction for Master 0
+                1230 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000b
+                1230 ns       Driver: Try to generate transaction for Master 1
+                1230 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                1230 ns   Scoreboard: Get transactions from Driver
+                1230 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000b
+                1230 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                1390 ns       Driver: Transactions successfully done
+                1390 ns       Driver: Try to generate transaction for Master 0
+                1390 ns               Transaction is: Slave = 0, address = 000000aa, data = 0000000e
+                1390 ns       Driver: Try to generate transaction for Master 1
+                1390 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                1390 ns   Scoreboard: Get transactions from Driver
+                1390 ns               Transaction is: Slave = 0, address = 000000aa, data = 0000000e
+                1390 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                1550 ns       Driver: Transactions successfully done
+
+                1550 ns               >>> Checking single read mode for both Masters has been finished
+
+
+                1710 ns       Driver: Start resetting the DUT
+                1770 ns       Driver: End of reset
+
+                1770 ns               >>> Start checking simultaneous write mode
+
+                1770 ns       Driver: Try to generate transaction for Master 0
+                1770 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000b
+                1770 ns       Driver: Try to generate transaction for Master 1
+                1770 ns               Transaction is: Slave = 1, address = 000000bb, data = 0000000d
+                1770 ns   Scoreboard: Get transactions from Driver
+                1770 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000b
+                1770 ns               Transaction is: Slave = 1, address = 000000bb, data = 0000000d
+                1850 ns       Driver: Transactions successfully done
+                1850 ns       Driver: Try to generate transaction for Master 0
+                1850 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000a
+                1850 ns       Driver: Try to generate transaction for Master 1
+                1850 ns               Transaction is: Slave = 1, address = 000000bb, data = 0000000b
+                1850 ns   Scoreboard: Get transactions from Driver
+                1850 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000a
+                1850 ns               Transaction is: Slave = 1, address = 000000bb, data = 0000000b
+                1930 ns       Driver: Transactions successfully done
+                1930 ns       Driver: Try to generate transaction for Master 0
+                1930 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000e
+                1930 ns       Driver: Try to generate transaction for Master 1
+                1930 ns               Transaction is: Slave = 1, address = 000000aa, data = 0000000f
+                1930 ns   Scoreboard: Get transactions from Driver
+                1930 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000e
+                1930 ns               Transaction is: Slave = 1, address = 000000aa, data = 0000000f
+                2010 ns       Driver: Transactions successfully done
+                2010 ns       Driver: Try to generate transaction for Master 0
+                2010 ns               Transaction is: Slave = 0, address = 000000ee, data = 0000000f
+                2010 ns       Driver: Try to generate transaction for Master 1
+                2010 ns               Transaction is: Slave = 0, address = 000000ee, data = 0000000e
+                2010 ns   Scoreboard: Get transactions from Driver
+                2010 ns               Transaction is: Slave = 0, address = 000000ee, data = 0000000f
+                2010 ns               Transaction is: Slave = 0, address = 000000ee, data = 0000000e
+                2090 ns       Driver: Transactions successfully done
+
+                2090 ns               >>> Checking simultaneous write mode has been finished
+
+
+                2250 ns       Driver: Start resetting the DUT
+                2310 ns       Driver: End of reset
+
+                2310 ns               >>> Start checking simultaneous read mode
+
+                2310 ns       Driver: Try to generate transaction for Master 0
+                2310 ns               Transaction is: Slave = 0, address = 000000ff, data = 0000000e
+                2310 ns       Driver: Try to generate transaction for Master 1
+                2310 ns               Transaction is: Slave = 0, address = 000000ff, data = 0000000e
+                2310 ns   Scoreboard: Get transactions from Driver
+                2310 ns               Transaction is: Slave = 0, address = 000000ff, data = 0000000e
+                2310 ns               Transaction is: Slave = 0, address = 000000ff, data = 0000000e
+                2390 ns       Driver: Transactions successfully done
+                2390 ns       Driver: Try to generate transaction for Master 0
+                2390 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000e
+                2390 ns       Driver: Try to generate transaction for Master 1
+                2390 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000e
+                2390 ns   Scoreboard: Get transactions from Driver
+                2390 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000e
+                2390 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000e
+                2470 ns       Driver: Transactions successfully done
+                2470 ns       Driver: Try to generate transaction for Master 0
+                2470 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                2470 ns       Driver: Try to generate transaction for Master 1
+                2470 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                2470 ns   Scoreboard: Get transactions from Driver
+                2470 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                2470 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                2550 ns       Driver: Transactions successfully done
+                2550 ns       Driver: Try to generate transaction for Master 0
+                2550 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000c
+                2550 ns       Driver: Try to generate transaction for Master 1
+                2550 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000c
+                2550 ns   Scoreboard: Get transactions from Driver
+                2550 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000c
+                2550 ns               Transaction is: Slave = 0, address = 000000cc, data = 0000000c
+                2630 ns       Driver: Transactions successfully done
+
+                2630 ns               >>> Checking simultaneous read mode has been finished
+
+
+                2790 ns       Driver: Start resetting the DUT
+                2850 ns       Driver: End of reset
+
+                2850 ns               >>> Start checking simultaneous write read mode
+
+                2850 ns       Driver: Try to generate transaction for Master 0
+                2850 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                2850 ns       Driver: Try to generate transaction for Master 1
+                2850 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                2850 ns   Scoreboard: Get transactions from Driver
+                2850 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                2850 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                2930 ns       Driver: Transactions successfully done
+                2930 ns       Driver: Try to generate transaction for Master 0
+                2930 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                2930 ns       Driver: Try to generate transaction for Master 1
+                2930 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000f
+                2930 ns   Scoreboard: Get transactions from Driver
+                2930 ns               Transaction is: Slave = 1, address = 000000cc, data = 0000000b
+                2930 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000f
+                3010 ns       Driver: Transactions successfully done
+                3010 ns       Driver: Try to generate transaction for Master 0
+                3010 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000c
+                3010 ns       Driver: Try to generate transaction for Master 1
+                3010 ns               Transaction is: Slave = 1, address = 000000aa, data = 0000000b
+                3010 ns   Scoreboard: Get transactions from Driver
+                3010 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000c
+                3010 ns               Transaction is: Slave = 1, address = 000000aa, data = 0000000b
+                3090 ns       Driver: Transactions successfully done
+                3090 ns       Driver: Try to generate transaction for Master 0
+                3090 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000e
+                3090 ns       Driver: Try to generate transaction for Master 1
+                3090 ns               Transaction is: Slave = 0, address = 000000aa, data = 0000000d
+                3090 ns   Scoreboard: Get transactions from Driver
+                3090 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000e
+                3090 ns               Transaction is: Slave = 0, address = 000000aa, data = 0000000d
+                3170 ns       Driver: Transactions successfully done
+
+                3170 ns               >>> Checking simultaneous write read mode has been finished
+
+
+                3330 ns       Driver: Start resetting the DUT
+                3390 ns       Driver: End of reset
+
+                3390 ns               >>> Start checking simultaneous read write mode
+
+                3390 ns       Driver: Try to generate transaction for Master 0
+                3390 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                3390 ns       Driver: Try to generate transaction for Master 1
+                3390 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000c
+                3390 ns   Scoreboard: Get transactions from Driver
+                3390 ns               Transaction is: Slave = 1, address = 000000ee, data = 0000000d
+                3390 ns               Transaction is: Slave = 0, address = 000000bb, data = 0000000c
+                3470 ns       Driver: Transactions successfully done
+                3470 ns       Driver: Try to generate transaction for Master 0
+                3470 ns               Transaction is: Slave = 0, address = 000000dd, data = 0000000f
+                3470 ns       Driver: Try to generate transaction for Master 1
+                3470 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000d
+                3470 ns   Scoreboard: Get transactions from Driver
+                3470 ns               Transaction is: Slave = 0, address = 000000dd, data = 0000000f
+                3470 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000d
+                3550 ns       Driver: Transactions successfully done
+                3550 ns       Driver: Try to generate transaction for Master 0
+                3550 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000e
+                3550 ns       Driver: Try to generate transaction for Master 1
+                3550 ns               Transaction is: Slave = 0, address = 000000dd, data = 0000000c
+                3550 ns   Scoreboard: Get transactions from Driver
+                3550 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000e
+                3550 ns               Transaction is: Slave = 0, address = 000000dd, data = 0000000c
+                3630 ns       Driver: Transactions successfully done
+                3630 ns       Driver: Try to generate transaction for Master 0
+                3630 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000a
+                3630 ns       Driver: Try to generate transaction for Master 1
+                3630 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000c
+                3630 ns   Scoreboard: Get transactions from Driver
+                3630 ns               Transaction is: Slave = 1, address = 000000ff, data = 0000000a
+                3630 ns               Transaction is: Slave = 1, address = 000000dd, data = 0000000c
+                3710 ns       Driver: Transactions successfully done
+
+                3710 ns               >>> Checking simultaneous read write mode has been finished
+
+                3970 ns  Environment: Preparing for the end of testbench
+                3970 ns  Test completed without errors
+
+                                                 *** END TESTBENCH ***
