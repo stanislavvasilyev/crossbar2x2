@@ -104,13 +104,13 @@ initial begin
 // End 1 write transaction
 
   repeat(1) @ (posedge clock);
-//  tb_master_0_req   <=  1'b1;
+  tb_master_0_req   <=  1'b1;
   tb_master_1_req   <=  1'b1;
-//  tb_master_0_cmd   <=  1'b1;
+  tb_master_0_cmd   <=  1'b1;
   tb_master_1_cmd   <=  1'b1;
-//  tb_master_0_addr  <=  8'hA;
+  tb_master_0_addr  <=  8'hA;
   tb_master_1_addr  <=  8'hB;
-//  tb_master_0_wdata <=  8'hA;
+  tb_master_0_wdata <=  8'hA;
   tb_master_1_wdata <=  8'hB;
   
   repeat (1) @ (posedge clock);
@@ -118,13 +118,13 @@ initial begin
 
   repeat (1) @ (posedge clock);
   tb_slave_0_ack    <=  1'b0;
-//  tb_master_0_req   <=  0;
+  tb_master_0_req   <=  0;
   tb_master_1_req   <=  0;
-//  tb_master_0_cmd   <=  0;
+  tb_master_0_cmd   <=  0;
   tb_master_1_cmd   <=  0;
-//  tb_master_0_addr  <=  0;
+  tb_master_0_addr  <=  0;
   tb_master_1_addr  <=  0;
-//  tb_master_0_wdata <=  0;
+  tb_master_0_wdata <=  0;
   tb_master_1_wdata <=  0;
   
   repeat(1) @ (posedge clock);
@@ -132,13 +132,13 @@ initial begin
 
   repeat(1) @ (posedge clock);  
   tb_master_0_req   <=  1'b1;
-//  tb_master_1_req   <=  1'b1;
+  tb_master_1_req   <=  1'b1;
   tb_master_0_cmd   <=  1'b1;
-//  tb_master_1_cmd   <=  1'b1;
+  tb_master_1_cmd   <=  1'b1;
   tb_master_0_addr  <=  8'hA;
-//  tb_master_1_addr  <=  8'hB;
+  tb_master_1_addr  <=  8'hB;
   tb_master_0_wdata <=  8'hA;
-//  tb_master_1_wdata <=  8'hB;
+  tb_master_1_wdata <=  8'hB;
   
   repeat (1) @ (posedge clock);
   tb_slave_0_ack    <=  1'b1;
@@ -146,13 +146,13 @@ initial begin
   repeat (1) @ (posedge clock);
   tb_slave_0_ack    <=  1'b0;
   tb_master_0_req   <=  0;
-//  tb_master_1_req   <=  0;
+  tb_master_1_req   <=  0;
   tb_master_0_cmd   <=  0;
-//  tb_master_1_cmd   <=  0;
+  tb_master_1_cmd   <=  0;
   tb_master_0_addr  <=  0;
-//  tb_master_1_addr  <=  0;
+  tb_master_1_addr  <=  0;
   tb_master_0_wdata <=  0;
-//  tb_master_1_wdata <=  0;
+  tb_master_1_wdata <=  0;
 
   repeat(1) @ (posedge clock);
 // End 3 write transaction

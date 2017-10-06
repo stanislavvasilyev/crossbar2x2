@@ -2,7 +2,7 @@
 
                    0 ns  Environment: Start building environment for the DUT
                    0 ns  Environment: Driver, Scoreboard and mailbox has been created
-                   0 ns  Environment: Driver starting
+                   0 ns  Environment: Driver starting...
 
                    0 ns       Driver: Start resetting the DUT
                   50 ns       Driver: End of reset
